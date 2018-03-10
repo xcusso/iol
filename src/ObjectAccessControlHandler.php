@@ -24,18 +24,18 @@ class ObjectAccessControlHandler extends EntityAccessControlHandler {
     switch ($operation) {
       case 'view':
         if ($is_owner) {
-          return AccessResult::allowedIfHasPermission($account, 'view own projects entities');
+          return AccessResult::allowedIfHasPermission($account, 'view own iol entities');
         }
-        return AccessResult::allowedIfHasPermission($account, 'view any projects entities');
+        return AccessResult::allowedIfHasPermission($account, 'view any iol entities');
 
       case 'update':
         if ($is_owner) {
-          return AccessResult::allowedIfHasPermission($account, 'edit own projects entities');
+          return AccessResult::allowedIfHasPermission($account, 'edit own iol entities');
         }
-        return AccessResult::allowedIfHasPermission($account, 'edit any projects entities');
+        return AccessResult::allowedIfHasPermission($account, 'edit any iol entities');
 
       case 'delete':
-          return AccessResult::allowedIfHasPermission($account, 'delete projects entities');
+          return AccessResult::allowedIfHasPermission($account, 'delete iol entities');
     }
 
     // Unknown operation, no opinion.
@@ -46,7 +46,7 @@ class ObjectAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkCreateAccess(AccountInterface $account, array $context, $entity_bundle = NULL) {
-    return AccessResult::allowedIfHasPermission($account, 'add projects entities');
+    return AccessResult::allowedIfHasPermission($account, 'add iol entities');
   }
 
 }
