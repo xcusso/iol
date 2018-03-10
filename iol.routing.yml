@@ -1,0 +1,16 @@
+
+iol.admin_iol:
+  path: '/admin/iol'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Iol'
+  requirements:
+    _permission: 'Add projects entities'
+
+iol.configuration:
+  path: '/admin/iol/config'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Configuration'
+  requirements:
+    _permission: 'Administer iol'

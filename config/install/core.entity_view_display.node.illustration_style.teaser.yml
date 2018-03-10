@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.illustration_style.field_style_artist
+    - node.type.illustration_style
+  module:
+    - user
+id: node.illustration_style.teaser
+targetEntityType: node
+bundle: illustration_style
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_style_artist: true
+  field_style_category: true
+  field_style_description: true
+  field_style_images: true
+  field_style_tags: true

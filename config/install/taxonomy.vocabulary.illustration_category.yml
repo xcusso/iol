@@ -1,0 +1,9 @@
+uuid: e9bb3ec8-cddc-4dc3-89ed-ee41cbef8b84
+langcode: en
+status: true
+dependencies: {  }
+name: 'Illustration category'
+vid: illustration_category
+description: ''
+hierarchy: 1
+weight: 0

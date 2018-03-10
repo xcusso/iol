@@ -1,0 +1,6 @@
+uuid: 30eac372-c5be-4c1c-b6e1-bfea3476a421
+langcode: en
+status: true
+dependencies: {  }
+id: basic_illustration_project
+label: 'Basic illustration project'

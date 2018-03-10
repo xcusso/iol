@@ -1,0 +1,49 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.illustration_style.field_style_artist
+    - field.field.node.illustration_style.field_style_category
+    - field.field.node.illustration_style.field_style_description
+    - field.field.node.illustration_style.field_style_images
+    - field.field.node.illustration_style.field_style_tags
+    - node.type.illustration_style
+  module:
+    - text
+    - user
+id: node.illustration_style.default
+targetEntityType: node
+bundle: illustration_style
+mode: default
+content:
+  field_style_category:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_style_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_style_tags:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_style_artist: true
+  field_style_images: true

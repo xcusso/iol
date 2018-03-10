@@ -1,0 +1,36 @@
+administer iol:
+  title: 'Administer iol'
+  description: 'Allow to access the administration form to configure Project, Scene and Object entities.'
+  restrict access: true
+
+add projects entities:
+  title: 'Add projects entities'
+  description: 'Create new Project, Scene or Object content'
+
+delete projects entities:
+  title: 'Delete Project, Scene or Object content '
+
+edit own projects entities:
+  title: 'Edit own Project, Scene or Object entities'
+
+edit any projects entities:
+  title: 'Edit any Project, Scene or Object entities'
+
+view own projects entities:
+  title: 'View own Project, Scene or Object entities'
+
+view any projects entities:
+  title: 'View any Project, Scene or Object entities'
+
+view all projects revisions:
+  title: 'View all Project, Scene or Object entities'
+
+revert all projects revisions:
+  title: 'Revert all Project, Scene or Object entities'
+  description: 'Role requires permission <em>view Projects revisions</em> and <em>edit rights</em> for projects entities in question or <em>administer projects entities</em>.'
+
+delete all projects revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Projects revisions</em> and <em>delete rights</em> for projects entities in question or <em>administer projects entities</em>.'
+add element entities:
+  title: 'Create new Element entities'

@@ -1,0 +1,6 @@
+uuid: 9f98af39-8eb2-4e03-ad35-632bd25aef7c
+langcode: en
+status: true
+dependencies: {  }
+id: basic_object
+label: 'Basic object'

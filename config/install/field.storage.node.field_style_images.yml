@@ -1,0 +1,30 @@
+uuid: 20aeeb2f-c2d8-4af4-96e5-ad42599e34e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_style_images
+field_name: field_style_images
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 9
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

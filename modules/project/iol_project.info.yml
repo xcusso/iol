@@ -1,0 +1,10 @@
+name: Iol Project
+type: module
+description: 'IllustratiOnLine Project Module'
+core: 8.x
+package: Iol
+mtime: 1520296278
+dependencies:
+  - iol
+version: 0.1
+php: 5.5.9

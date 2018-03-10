@@ -1,0 +1,9 @@
+uuid: 809452c0-2b8e-43dd-a408-ff4b83724893
+langcode: en
+status: true
+dependencies: {  }
+name: 'Illustration tags'
+vid: illustration_tags
+description: ''
+hierarchy: 1
+weight: 0

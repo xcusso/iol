@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_artist_profile
+    - node.type.artist
+  module:
+    - text
+id: node.artist.field_artist_profile
+field_name: field_artist_profile
+entity_type: node
+bundle: artist
+label: 'Artist Profile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

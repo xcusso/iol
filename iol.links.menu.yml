@@ -1,0 +1,49 @@
+# Iol admin main menu
+iol.admin_iol:
+  title: 'Iol'
+  route_name: 'iol.admin_iol'
+  parent: 'system.admin'
+  description: 'Administer and configure Iol.'
+  weight: -10
+
+iol.configuration:
+  title: 'Configuration'
+  route_name: 'iol.configuration'
+  parent: 'iol.admin_iol'
+  description: 'Configure Iol settings and structure.'
+  weight: 10
+
+# Scene menu items definition
+entity.scene.collection:
+  title: 'Scene list'
+  route_name: entity.scene.collection
+  description: 'List Scene entities'
+  parent: iol.admin_iol
+  weight: 91
+
+
+# Scene type menu items definition
+entity.scene_type.collection:
+  title: 'Scene type'
+  route_name: entity.scene_type.collection
+  description: 'List Scene type (bundles)'
+  parent: iol.configuration
+  weight: 91
+
+
+# Object menu items definition
+entity.object.collection:
+  title: 'Object list'
+  route_name: entity.object.collection
+  description: 'List Object entities'
+  parent: iol.admin_iol
+  weight: 92
+
+
+# Object type menu items definition
+entity.object_type.collection:
+  title: 'Object type'
+  route_name: entity.object_type.collection
+  description: 'List Object type (bundles)'
+  parent: iol.configuration
+  weight: 92

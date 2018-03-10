@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.artist.field_artist_profile
+    - node.type.artist
+  module:
+    - user
+id: node.artist.teaser
+targetEntityType: node
+bundle: artist
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_artist_image: true
+  field_artist_profile: true

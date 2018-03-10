@@ -1,0 +1,17 @@
+# Project menu items definition
+entity.project.collection:
+  title: 'Project list'
+  route_name: entity.project.collection
+  description: 'List Project entities'
+  parent: iol.admin_iol
+  weight: 90
+
+
+# Project type menu items definition
+entity.project_type.collection:
+  title: 'Project type'
+  route_name: entity.project_type.collection
+  description: 'List Project type (bundles)'
+  parent: iol.configuration
+  weight: 90
+  

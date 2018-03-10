@@ -1,0 +1,19 @@
+uuid: 137352c8-c268-4f93-8f25-584bb094b956
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_artist_profile
+field_name: field_artist_profile
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

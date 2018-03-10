@@ -1,0 +1,37 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_style_images
+    - node.type.illustration_style
+  module:
+    - image
+id: node.illustration_style.field_style_images
+field_name: field_style_images
+entity_type: node
+bundle: illustration_style
+label: 'Style images'
+description: "Samples for this style:\r\n0,1,2 Object Draft (DO) Layout (LO) Artwork(AO)\r\n3,4,5 Background Draft (DB) Layout (LB) Artwork (AB)\r\n6,7,8 Free samples"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
