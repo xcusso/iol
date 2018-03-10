@@ -1,0 +1,22 @@
+# Object routing definition
+
+entity.object.canonical:
+  route_name: entity.object.canonical
+  base_route: entity.object.canonical
+  title: 'View'
+
+entity.object.edit_form:
+  route_name: entity.object.edit_form
+  base_route: entity.object.canonical
+  title: 'Edit'
+
+entity.object.version_history:
+  route_name: entity.object.version_history
+  base_route: entity.object.canonical
+  title: 'Revisions'
+
+entity.object.delete_form:
+  route_name:  entity.object.delete_form
+  base_route:  entity.object.canonical
+  title: Delete
+  weight: 10

@@ -1,0 +1,16 @@
+# Object menu items definition
+entity.object.collection:
+  title: 'Object list'
+  route_name: entity.object.collection
+  description: 'List Object entities'
+  parent: iol.admin_iol
+  weight: 90
+
+
+# Object type menu items definition
+entity.object_type.collection:
+  title: 'Object type'
+  route_name: entity.object_type.collection
+  description: 'List Object type (bundles)'
+  parent: iol.configuration
+  weight: 90
