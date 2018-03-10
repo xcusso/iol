@@ -1,0 +1,10 @@
+entity.scene.add_form:
+  route_name: entity.scene.add_page
+  title: 'Add Scene'
+  appears_on:
+    - entity.scene.collection
+entity.scene_type.add_form:
+  route_name: entity.scene_type.add_form
+  title: 'Add Scene type'
+  appears_on:
+    - entity.scene_type.collection

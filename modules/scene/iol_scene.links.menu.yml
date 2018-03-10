@@ -1,0 +1,16 @@
+# Scene menu items definition
+entity.scene.collection:
+  title: 'Scene list'
+  route_name: entity.scene.collection
+  description: 'List Scene entities'
+  parent: iol.admin_iol
+  weight: 90
+
+
+# Scene type menu items definition
+entity.scene_type.collection:
+  title: 'Scene type'
+  route_name: entity.scene_type.collection
+  description: 'List Scene type (bundles)'
+  parent: iol.configuration
+  weight: 90

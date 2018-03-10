@@ -1,0 +1,59 @@
+<?php
+
+/**
+ * @file
+ * Contains iol_scene.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function iol_scene_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the iol module.
+    case 'help.page.iol':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('IllustratiOnLine Scene Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function iol_scene_theme() {
+  $theme = [];
+  $theme['scene'] = [
+    'render element' => 'elements',
+    'file' => 'scene.page.inc',
+    'template' => 'scene',
+  ];
+  $theme['scene_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'scene.page.inc',
+  ];
+
+    return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function iol_scene_theme_suggestions_scene(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#scene'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'scene__' . $sanitized_view_mode;
+  $suggestions[] = 'scene__' . $entity->bundle();
+  $suggestions[] = 'scene__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'scene__' . $entity->id();
+  $suggestions[] = 'scene__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

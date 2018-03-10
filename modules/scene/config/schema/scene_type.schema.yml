@@ -1,0 +1,12 @@
+iol.scene_type.*:
+  type: config_entity
+  label: 'Scene type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
